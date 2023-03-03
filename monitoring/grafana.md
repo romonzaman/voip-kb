@@ -43,3 +43,14 @@ You will be prompted to change your password.
 After logging in, go to "Settings" and select "Configurations", 
 then choose "Datasources" and select Prometheus.
 
+
+#### grafana dashboard
+
+Node Exporter Full:
+
+>Dashboards -> imports
+
+```
+ID:     1860
+```
+
