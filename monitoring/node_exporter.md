@@ -2,6 +2,9 @@
 ## node_exporter on debian 111
 
 ```
+groupadd --system prometheus
+useradd -s /sbin/nologin --system -g prometheus prometheus
+
 cd /usr/src/
 
 curl -s https://api.github.com/repos/prometheus/node_exporter/releases/latest| grep browser_download_url|grep linux-amd64|cut -d '"' -f 4|wget -qi -
