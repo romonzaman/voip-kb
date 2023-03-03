@@ -13,12 +13,6 @@ tar -xvf node_exporter*.tar.gz
 cd node_exporter*/
 cp node_exporter /usr/local/bin
 
-```
-
-
-> node_exporter --version
-
-```
 tee /etc/systemd/system/node_exporter.service <<EOF
 [Unit]
 Description=Node Exporter
@@ -33,9 +27,6 @@ ExecStart=/usr/local/bin/node_exporter
 WantedBy=default.target
 EOF
 
-```
-
-```
 systemctl daemon-reload
 systemctl start node_exporter
 systemctl enable node_exporter
