@@ -32,6 +32,7 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=default.target
 EOF
+
 ```
 
 ```
@@ -40,6 +41,7 @@ systemctl start node_exporter
 systemctl enable node_exporter
 
 systemctl status node_exporter.service
+
 ```
 
 
