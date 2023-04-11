@@ -7,7 +7,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 apt-get update -y
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-docker –version
+docker version
 systemctl status docker
 
 ```
