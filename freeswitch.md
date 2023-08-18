@@ -1,4 +1,6 @@
 
+## FreeSWITCH Installation
+
 ```
 apt-get update -y
 apt-get install -y gnupg2 wget lsb-release
